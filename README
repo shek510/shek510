@@ -1,0 +1,5 @@
+Jfr Analysis to Identify the Bottlenecks of the application and pefromance related issues... more over identify the exact place issue occurs and problemetic lines of code which causing the issues.
+Steps are like collecting the access log for the High Response time API Transactions.
+Collect the application logs for the respective high response time transaction and identify on which process its spent more time in overall time.
+Then open tehe collected JFRs in JDK Mission Controller application to check thread which we find in the access log for the high response time transaction.
+Sort the thread and check the stack trace for the issue in Event browser.
