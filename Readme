@@ -1,0 +1,7 @@
+Shell script to collect the JFRs for the problematic embedded tomact applications to analyze the issue and debug the issue codebase.
+This shell script creates 400 jfrs start from 1st and record the data for 15mins and start the 2nd file to write the data.
+This script we created to capture the data for complete 4days of data and each file contains the data for 15mins so 24hours == 86400secs ==> 86400%900 ==> 96*4 ==> 384
+There is a command to capture the JFR which we are used to capture the JFR file.
+We given one second of sleep time after its capture the 900secs data and again start the new jfr file to capture the data.
+We have to specifiy the PID (Parent ID)/ Process ID to in JFR Command to capture the specific application JFR.
+Command is : jcmd 7 JFR.start duration=900s filename=/tmp/ProdJFR/JfrRecordingFile_messaging-pod-prod-gcp-6dbbc569f-4xxwc_gcpraomsapp05_$var.jfr
