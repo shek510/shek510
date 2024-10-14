@@ -1,0 +1,8 @@
+One shell script to collect all the stats which is required to debug the application issues related to network, heap(memory), high RT, Failure transactions etc...
+we can able to collect the following stats using this one shell script.
+1. JFR
+2. Heapdump
+3. Strace
+4. Netstat
+5. lsof
+6. jstack
