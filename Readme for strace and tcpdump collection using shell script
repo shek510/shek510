@@ -1,0 +1,4 @@
+We can collect the strace and tcpdump for the respective application level transaction to debug the issue which we encountered during the application load test.
+we can analyze High RT, Redis and other application level issue using strace.
+strace help us to collect the complete trace for the respective transaction in detail.
+tcpdump help us to check on the network related issue during the transaction.
